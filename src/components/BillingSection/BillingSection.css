@@ -1,0 +1,19 @@
+.billing-section {
+  background-color: #ffffff; /* White background for the billing section */
+  border-radius: 12px; /* Rounded corners */
+  padding: 15px; /* Padding inside the billing section */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.billing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 10px; /* Space between items */
+}
+
+.billing-item {
+  background-color: #f9f9f9; /* Light background for items */
+  border: 1px solid #ddd; /* Border for items */
+  border-radius: 8px; /* Rounded corners for items */
+  padding: 10px; /* Padding inside items */
+} 
