@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+body {
+  background-color: #f0f4f8; /* Light background for contrast */
+  color: #333; /* Dark text color for readability */
+  font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+h2 {
+  font-weight: bold; /* Bold for titles */
+  margin: 20px 0; /* Space above and below headings */
+  color: #2c3e50; /* Darker color for titles */
+}
+
+.component-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: auto; /* Adjust rows automatically */
+  gap: 20px; /* Space between components */
+  padding: 20px; /* Padding around the container */
+  height: calc(100vh - 40px); /* Full height minus padding */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+.component {
+  background-color: #ffffff; /* White background for components */
+  border-radius: 12px; /* Rounded corners */
+  padding: 15px; /* Padding inside components */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%; /* Full width for components */
+}
+
+input, textarea, button {
+  width: 100%; /* Full width for inputs and buttons */
+  padding: 10px; /* Padding inside inputs and buttons */
+  margin: 10px 0; /* Space above and below inputs and buttons */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+button {
+  background-color: #4CAF4F; /* Green background */
+  color: #ecf0f1; /* White text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #429c45; /* Darker green on hover */
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #34495e; /* Dark background for the sidebar */
+  color: #ecf0f1; /* Light text color */
+  padding: 20px; /* Padding around the sidebar */
+  height: 100vh; /* Full height */
+  position: fixed; /* Fixed position */
+  width: 200px; /* Fixed width */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.sidebar a {
+  color: #ecf0f1; /* Link color */
+  text-decoration: none; /* Remove underline */
+  padding: 20px; /* Padding for links */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.sidebar a:hover {
+  background-color: #2c3e50; /* Darker background on hover */
+}
+
+/* Card styles */
+.card {
+  @apply bg-ubio-white border border-ubio-light-gray shadow-md; /* Card background and border */
+}
+
+.card .indicator {
+  @apply text-ubio-yellow; /* Key indicators in cards */
+}
+
+/* Widget styles */
+.widget {
+  @apply bg-ubio-light-gray; /* Widget background */
+}
+
+/* Form styles */
+input {
+  @apply bg-ubio-white border border-ubio-mid-gray; /* Input background and border */
+}
+
+input:focus {
+  @apply border-ubio-yellow; /* Active input state */
+}
+
+/* Chart styles */
+.chart {
+  /* Add specific styles for charts if needed */
+}
+
+/* Add any additional custom styles as needed */
+
+.main-content {
+  margin-left: 200px; /* Same width as the sidebar */
+  padding: 20px; /* Padding for the main content */
+}
+
+.full-width {
+  grid-column: span 2; /* Make this component span both columns */
+}
+
+.news-feed {
+  background-color: #ffffff; /* White background for the news feed */
+  border-radius: 12px; /* Rounded corners */
+  padding: 15px; /* Padding inside the news feed */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 20px; /* Space above the news feed */
+}

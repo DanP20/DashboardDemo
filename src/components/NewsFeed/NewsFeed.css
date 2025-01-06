@@ -1,0 +1,54 @@
+.news-feed {
+  background-color: var(--ubio-dark-blue); /* Use the dark blue from your theme */
+  color: var(--ubio-white); /* Use white for text */
+  padding: 20px; /* Padding around the content */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.stat-cards {
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: space-between; /* Space between cards */
+  margin-bottom: 20px; /* Space below the stat cards */
+}
+
+.stat-card {
+  background-color: var(--ubio-light-gray); /* Use light gray for card background */
+  padding: 15px; /* Padding inside the card */
+  border-radius: 8px; /* Rounded corners for cards */
+  flex: 1; /* Allow cards to grow equally */
+  margin: 0 10px; /* Margin between cards */
+  text-align: center; /* Center text in cards */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.stat-card:hover {
+  background-color: var(--ubio-yellow-dark); /* Darker yellow on hover */
+}
+
+h3 {
+  margin-top: 20px; /* Space above the chart title */
+  margin-bottom: 10px; /* Space below the chart title */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points from list */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  padding: 10px; /* Padding for each list item */
+  border-radius: 5px; /* Rounded corners for list items */
+  margin: 5px 0; /* Space between list items */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+}
+
+.summary-row {
+  margin-top: 20px; /* Space above the summary row */
+  font-weight: bold; /* Bold text for summary */
+  color: var(--ubio-yellow); /* Use yellow for emphasis */
+} 
