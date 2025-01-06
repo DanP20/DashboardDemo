@@ -49,13 +49,13 @@ input, textarea, button {
 }
 
 button {
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
+  background-color: #4CAF4F; /* Green background */
+  color: #ecf0f1; /* White text */
   cursor: pointer; /* Pointer cursor on hover */
 }
 
 button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #429c45; /* Darker green on hover */
 }
 
 /* Sidebar styles */
